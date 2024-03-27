@@ -1,0 +1,128 @@
+body {
+  background-color: whitesmoke;
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+.container {
+  width: 800px;
+  margin: 100px auto 0 auto;
+  border: 1px solid black;
+}
+
+.widget *,
+.modal-form * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: black;
+  background-color: white;
+}
+
+.widget {
+  padding: 0 1em 1em 1em;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 0;
+}
+
+.button {
+  margin-left: 1em;
+  padding: 0.7em 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ticket-button {
+  width: 2em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 50%;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.button:hover,
+.ticket-button:hover {
+  background-color: rgb(193, 191, 191)
+}
+
+.widget .ticket {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5em 2em 0.5em 0.5em;
+  border: 1px solid black;
+}
+
+.widget .ticket:not(:first-child) {
+  border-top: none;
+}
+
+.widget .text {
+  width: 60%;
+}
+
+.widget .description {
+  margin-top: 2em;
+}
+
+.modal-form {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-active {
+  display: flex;
+}
+
+.modal-form form {
+  width: 500px;
+  padding: 1.5em 1em 1em 1em;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.modal-form form * {
+  display: block;
+}
+
+.modal-form .title {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.modal-form form input,
+.modal-form form textarea {
+  width: 100%;
+  margin: 1em 0;
+  padding: 0.5em;
+  border: 1px solid black;
+}
+
+.modal-form form .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-form .modal-form form .buttons {
+  margin-top: 1em;
+}
